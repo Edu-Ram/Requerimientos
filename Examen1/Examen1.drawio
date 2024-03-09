@@ -1,82 +1,153 @@
-<mxfile host="app.diagrams.net" modified="2024-03-09T00:28:33.262Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="mryBakan6Bcfg9mq7kSu" version="24.0.3" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-09T00:50:10.424Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="AE4_HZTUSp0HfvJVI62a" version="24.0.3" type="github">
   <diagram name="Página-1" id="C9y6ylGqr0JpFU4tfEc5">
-    <mxGraphModel dx="475" dy="251" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="616" dy="725" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="uT5XBVkz1cXHhe_Z9Z36-1" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
-          <mxGeometry x="212" y="132" width="30" height="30" as="geometry" />
-        </mxCell>
         <mxCell id="uT5XBVkz1cXHhe_Z9Z36-2" value="Oficial de tránsito genera boleta de multa" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="167" y="200" width="120" height="60" as="geometry" />
+          <mxGeometry x="222" y="-74" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="uT5XBVkz1cXHhe_Z9Z36-3" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uT5XBVkz1cXHhe_Z9Z36-1" target="uT5XBVkz1cXHhe_Z9Z36-2">
+        <mxCell id="uT5XBVkz1cXHhe_Z9Z36-3" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="uT5XBVkz1cXHhe_Z9Z36-25" target="uT5XBVkz1cXHhe_Z9Z36-2">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="100" y="327" as="sourcePoint" />
-            <mxPoint x="150" y="277" as="targetPoint" />
+            <mxPoint x="314" y="-149.7037037037037" as="sourcePoint" />
+            <mxPoint x="180" y="138" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="uT5XBVkz1cXHhe_Z9Z36-4" value="¿Conductor apela?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="181" y="298" width="92" height="80" as="geometry" />
+          <mxGeometry x="215" y="364" width="92" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="uT5XBVkz1cXHhe_Z9Z36-5" value="Encargado ingresa apelación" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="277" y="400" width="120" height="60" as="geometry" />
+        <mxCell id="uT5XBVkz1cXHhe_Z9Z36-5" value="Ingresa apelación" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="496" y="464" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="uT5XBVkz1cXHhe_Z9Z36-6" value="Envía apelación al juzgado" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="277" y="494" width="120" height="60" as="geometry" />
+          <mxGeometry x="496" y="558" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="uT5XBVkz1cXHhe_Z9Z36-7" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uT5XBVkz1cXHhe_Z9Z36-4" target="uT5XBVkz1cXHhe_Z9Z36-5">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="281" y="335" as="sourcePoint" />
-            <mxPoint x="417" y="340" as="targetPoint" />
+            <mxPoint x="315" y="401" as="sourcePoint" />
+            <mxPoint x="451" y="406" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="337" y="340" />
+              <mxPoint x="371" y="406" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="uT5XBVkz1cXHhe_Z9Z36-8" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uT5XBVkz1cXHhe_Z9Z36-5" target="uT5XBVkz1cXHhe_Z9Z36-6">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="283" y="348" as="sourcePoint" />
-            <mxPoint x="347" y="410" as="targetPoint" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="uT5XBVkz1cXHhe_Z9Z36-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uT5XBVkz1cXHhe_Z9Z36-2" target="uT5XBVkz1cXHhe_Z9Z36-4">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="283" y="348" as="sourcePoint" />
-            <mxPoint x="347" y="410" as="targetPoint" />
+            <mxPoint x="502" y="412" as="sourcePoint" />
+            <mxPoint x="566" y="474" as="targetPoint" />
             <Array as="points" />
           </mxGeometry>
         </mxCell>
         <mxCell id="uT5XBVkz1cXHhe_Z9Z36-10" value="Recibe resolución del juzgado" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="167" y="612" width="120" height="60" as="geometry" />
+          <mxGeometry x="201" y="678" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="uT5XBVkz1cXHhe_Z9Z36-11" value="Actualiza estado de multa" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="167" y="696" width="120" height="60" as="geometry" />
+          <mxGeometry x="201" y="769" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="uT5XBVkz1cXHhe_Z9Z36-12" value="Crea cuenta por cobrar" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="167" y="778" width="120" height="60" as="geometry" />
+          <mxGeometry x="359" y="994" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="uT5XBVkz1cXHhe_Z9Z36-13" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uT5XBVkz1cXHhe_Z9Z36-4" target="uT5XBVkz1cXHhe_Z9Z36-10">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="283" y="348" as="sourcePoint" />
-            <mxPoint x="347" y="410" as="targetPoint" />
+            <mxPoint x="317" y="414" as="sourcePoint" />
+            <mxPoint x="381" y="476" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="142" y="338" />
-              <mxPoint x="142" y="578" />
-              <mxPoint x="227" y="581" />
+              <mxPoint x="176" y="404" />
+              <mxPoint x="176" y="644" />
+              <mxPoint x="261" y="647" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="uT5XBVkz1cXHhe_Z9Z36-14" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uT5XBVkz1cXHhe_Z9Z36-6" target="uT5XBVkz1cXHhe_Z9Z36-10">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="347" y="470" as="sourcePoint" />
-            <mxPoint x="347" y="504" as="targetPoint" />
+            <mxPoint x="381" y="536" as="sourcePoint" />
+            <mxPoint x="381" y="570" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="337" y="580" />
-              <mxPoint x="228" y="581" />
+              <mxPoint x="371" y="646" />
+              <mxPoint x="262" y="647" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="uT5XBVkz1cXHhe_Z9Z36-15" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uT5XBVkz1cXHhe_Z9Z36-10" target="uT5XBVkz1cXHhe_Z9Z36-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="381" y="536" as="sourcePoint" />
+            <mxPoint x="381" y="570" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uT5XBVkz1cXHhe_Z9Z36-16" value="¿El estado de la multa es &quot;Condenada&quot;?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="177.5" y="879" width="167" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="uT5XBVkz1cXHhe_Z9Z36-17" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uT5XBVkz1cXHhe_Z9Z36-11" target="uT5XBVkz1cXHhe_Z9Z36-16">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="271" y="748" as="sourcePoint" />
+            <mxPoint x="271" y="779" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uT5XBVkz1cXHhe_Z9Z36-18" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uT5XBVkz1cXHhe_Z9Z36-16" target="uT5XBVkz1cXHhe_Z9Z36-12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="271" y="839" as="sourcePoint" />
+            <mxPoint x="271" y="889" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="419" y="937" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uT5XBVkz1cXHhe_Z9Z36-19" value="Conductor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="37" y="-11" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uT5XBVkz1cXHhe_Z9Z36-20" value="Servicio al cliente" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="507" y="-3" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uT5XBVkz1cXHhe_Z9Z36-21" value="Registrar Infracción y Reducir Puntos" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="222" y="21" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uT5XBVkz1cXHhe_Z9Z36-22" value="Consultar Estatus de Licencia" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="222" y="107" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uT5XBVkz1cXHhe_Z9Z36-23" value="Consultar Estatus de Infracciones y Cita" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="222" y="197" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uT5XBVkz1cXHhe_Z9Z36-25" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="267" y="-139" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uT5XBVkz1cXHhe_Z9Z36-27" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="uT5XBVkz1cXHhe_Z9Z36-2" target="uT5XBVkz1cXHhe_Z9Z36-21">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="292" y="-99" as="sourcePoint" />
+            <mxPoint x="292" y="-64" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uT5XBVkz1cXHhe_Z9Z36-28" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="uT5XBVkz1cXHhe_Z9Z36-21" target="uT5XBVkz1cXHhe_Z9Z36-22">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="302" y="-89" as="sourcePoint" />
+            <mxPoint x="302" y="-54" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uT5XBVkz1cXHhe_Z9Z36-29" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="uT5XBVkz1cXHhe_Z9Z36-22" target="uT5XBVkz1cXHhe_Z9Z36-23">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="312" y="-79" as="sourcePoint" />
+            <mxPoint x="312" y="-44" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uT5XBVkz1cXHhe_Z9Z36-30" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="448" y="254" as="sourcePoint" />
+            <mxPoint x="354" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uT5XBVkz1cXHhe_Z9Z36-31" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="uT5XBVkz1cXHhe_Z9Z36-23" target="uT5XBVkz1cXHhe_Z9Z36-32">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="377.5" y="178" as="sourcePoint" />
+            <mxPoint x="283.5" y="244" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="282" y="273" />
+              <mxPoint x="184" y="271" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uT5XBVkz1cXHhe_Z9Z36-32" value="¿Conduce de forma ilegal?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="131" y="288" width="105.5" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
