@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-03-09T02:05:03.387Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="PoyjBlrhqCwH1ncM80le" version="24.0.3" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-09T02:10:01.528Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="58k45pAsqv1GBG39CHBY" version="24.0.3" type="github">
   <diagram name="Página-1" id="C9y6ylGqr0JpFU4tfEc5">
-    <mxGraphModel dx="1509" dy="1385" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1040" dy="1138" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -171,7 +171,7 @@
         <mxCell id="uT5XBVkz1cXHhe_Z9Z36-66" value="No" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="393" y="789" width="33" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="uT5XBVkz1cXHhe_Z9Z36-67" value="¿No realizó el pago en los días hábiles?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="uT5XBVkz1cXHhe_Z9Z36-67" value="¿Realizó el pago en los días hábiles?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="176.75" y="974" width="137.5" height="115" as="geometry" />
         </mxCell>
         <mxCell id="uT5XBVkz1cXHhe_Z9Z36-69" value="Consultar Estatus de Infracciones y Cita" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -273,20 +273,46 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="uT5XBVkz1cXHhe_Z9Z36-86" value="Se crea una cuenta a cobrar" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="3" y="1064" width="151" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="uT5XBVkz1cXHhe_Z9Z36-87" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uT5XBVkz1cXHhe_Z9Z36-67" target="uT5XBVkz1cXHhe_Z9Z36-86">
+        <mxCell id="uT5XBVkz1cXHhe_Z9Z36-87" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uT5XBVkz1cXHhe_Z9Z36-67" target="uT5XBVkz1cXHhe_Z9Z36-93">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="256" y="934" as="sourcePoint" />
-            <mxPoint x="256" y="984" as="targetPoint" />
+            <mxPoint x="78.5" y="1064" as="targetPoint" />
             <Array as="points">
               <mxPoint x="81" y="1032" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="uT5XBVkz1cXHhe_Z9Z36-88" value="El proceso de actualización a condenada se hace en segundo plano" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;base=20;" vertex="1" parent="1">
-          <mxGeometry x="-54" y="958" width="204" height="80" as="geometry" />
+          <mxGeometry x="-62" y="947" width="204" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="uT5XBVkz1cXHhe_Z9Z36-89" value="Sí" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="124" y="997" width="29" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="uT5XBVkz1cXHhe_Z9Z36-90" value="Se crea una cuenta por cobrar al sistema de facturación" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="426" y="1355" width="151" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uT5XBVkz1cXHhe_Z9Z36-91" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uT5XBVkz1cXHhe_Z9Z36-67" target="uT5XBVkz1cXHhe_Z9Z36-90">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="187" y="1042" as="sourcePoint" />
+            <mxPoint x="88.5" y="1074" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="235" y="1329" />
+              <mxPoint x="502" y="1329" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uT5XBVkz1cXHhe_Z9Z36-93" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="66" y="1059" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uT5XBVkz1cXHhe_Z9Z36-94" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uT5XBVkz1cXHhe_Z9Z36-90" target="uT5XBVkz1cXHhe_Z9Z36-95">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="486" y="1484" as="sourcePoint" />
+            <mxPoint x="486" y="1509" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uT5XBVkz1cXHhe_Z9Z36-95" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="486.5" y="1450" width="30" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
