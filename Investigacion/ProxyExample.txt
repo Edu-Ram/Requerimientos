@@ -1,0 +1,19 @@
+The Proxy design pattern is a software development pattern that allows objects to act as
+placeholders or surrogates for other objects. It provides a way to control access to an
+object, add additional functionality, or provide a more efficient way to use the object.
+
+A case where the Proxy pattern can be applied is in a system where there is a need to
+control access to a resource that is expensive to create or slow to load. For example,
+consider a system that needs to load large images from a server. Loading the image
+directly every time it is needed can be slow and inefficient. A better approach would
+be to use a Proxy object to manage the loading and caching of the image.
+
+
+Code:
+In this example, the Image interface defines the interface for loading and displaying
+images. The RealImage class implements the Image interface and provides the actual
+implementation for loading and displaying images. The ImageProxy class acts as a
+surrogate for the RealImage class and provides the same interface as the Image
+interface. The ImageProxy class checks if the RealImage object has been created,
+and if not, it creates a new RealImage object. The ImageProxy class then delegates
+the load and display methods to the RealImage object.
