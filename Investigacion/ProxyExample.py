@@ -1,3 +1,6 @@
+from PIL import Image as PILImage
+
+
 class Image:
     def __init__(self, filename):
         self.filename = filename
@@ -8,7 +11,7 @@ class Image:
 
     def load_image_from_disk(self):
         print(f"Cargando {self.filename}...")
-        self.image_data = open(self.filename, "rb").read()
+        self.image_data = PILImage.open(self.filename)
         self.is_loaded = True
 
     def display_image(self):
@@ -16,7 +19,7 @@ class Image:
             self.load_image_from_disk()
 
         print(f"Mostrando {self.filename}")
-        # código para mostrar la imagen
+        self.image_data.show()
 
 
 class ProxyImage:
@@ -34,10 +37,10 @@ class ProxyImage:
 
 
 if __name__ == "__main__":
-    proxy_image1 = ProxyImage("image1.png")
+    proxy_image1 = ProxyImage("ProxyExample.drawio.png")
     proxy_image1.display_image()
 
-    proxy_image2 = ProxyImage("image2.png")
+    proxy_image2 = ProxyImage("ProxyExample2.drawio.png")
     proxy_image2.display_image()
 
     proxy_image1.display_image()
