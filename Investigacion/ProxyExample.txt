@@ -1,19 +1,9 @@
-The Proxy design pattern is a software development pattern that allows objects to act as
-placeholders or surrogates for other objects. It provides a way to control access to an
-object, add additional functionality, or provide a more efficient way to use the object.
+Caso de uso:
+El usuario puede acceder puede hacer un request para visualizar una imagen.
 
-A case where the Proxy pattern can be applied is in a system where there is a need to
-control access to a resource that is expensive to create or slow to load. For example,
-consider a system that needs to load large images from a server. Loading the image
-directly every time it is needed can be slow and inefficient. A better approach would
-be to use a Proxy object to manage the loading and caching of the image.
+RQF: El sistema utiliza el patrón Proxy para controlar el acceso y la carga eficiente de imágenes grandes desde un servidor, permitiendo la creación de objetos de imagen solo cuando sea necesario y optimizando el rendimiento del sistema.
 
 
 Code:
-In this example, the Image interface defines the interface for loading and displaying
-images. The RealImage class implements the Image interface and provides the actual
-implementation for loading and displaying images. The ImageProxy class acts as a
-surrogate for the RealImage class and provides the same interface as the Image
-interface. The ImageProxy class checks if the RealImage object has been created,
-and if not, it creates a new RealImage object. The ImageProxy class then delegates
-the load and display methods to the RealImage object.
+En este ejemplo, la interfaz de imagen define la interfaz para cargar y mostrar imágenes. La clase RealImage implementa la interfaz Image y proporciona la implementación real para cargar y mostrar imágenes. La clase ImageProxy actúa como sustituto de la clase RealImage y proporciona la misma interfaz que la interfaz Image.
+La clase ImageProxy comprueba si se ha creado el objeto RealImage y, si no es así, crea un nuevo objeto RealImage. A continuación, la clase ImageProxy delega los métodos de carga y visualización en el objeto RealImage.
