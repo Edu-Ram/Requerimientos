@@ -1,9 +1,0 @@
-Caso de uso:
-El usuario puede acceder puede hacer un request para visualizar una imagen.
-
-RQF: El sistema utiliza el patrón Proxy para controlar el acceso y la carga eficiente de imágenes grandes desde un servidor, permitiendo la creación de objetos de imagen solo cuando sea necesario y optimizando el rendimiento del sistema.
-
-
-Code:
-En este ejemplo, la interfaz de imagen define la interfaz para cargar y mostrar imágenes. La clase RealImage implementa la interfaz Image y proporciona la implementación real para cargar y mostrar imágenes. La clase ImageProxy actúa como sustituto de la clase RealImage y proporciona la misma interfaz que la interfaz Image.
-La clase ImageProxy comprueba si se ha creado el objeto RealImage y, si no es así, crea un nuevo objeto RealImage. A continuación, la clase ImageProxy delega los métodos de carga y visualización en el objeto RealImage.
