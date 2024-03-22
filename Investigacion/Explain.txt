@@ -1,0 +1,40 @@
+El patrón Proxy se basa en el principio de encapsulamiento, donde se utiliza un objeto intermediario para controlar el acceso a otro objeto. Esto permite que el Proxy actúe como una barrera entre el cliente y el objeto real, lo que brinda la oportunidad de agregar funcionalidades adicionales o realizar tareas de control sin modificar el objeto real mismo.
+
+Una de las ventajas clave del patrón Proxy es su capacidad para proporcionar un punto de control centralizado sobre el acceso a un objeto. Esto es especialmente útil en situaciones donde se requiere una gestión más sofisticada de recursos, como la limitación del acceso concurrente, la gestión de caché, la verificación de permisos, el registro de accesos, entre otros.
+
+Vamos a profundizar un poco en los diferentes tipos de Proxies:
+
+Proxy Remoto: En este tipo de Proxy, el objeto Proxy representa un objeto que reside en un sistema remoto. El cliente interactúa con el Proxy localmente, que se encarga de realizar las comunicaciones necesarias con el objeto real a través de la red. Esto oculta la complejidad de la comunicación remota al cliente, proporcionando una interfaz local familiar.
+
+Proxy Virtual: Aquí, el Proxy actúa como un sustituto del objeto real y retrasa su creación o carga hasta que sea necesario. Esto es útil cuando el objeto real es costoso de crear o cargar, o cuando su creación debe posponerse hasta que sea realmente necesario para conservar recursos.
+
+Proxy de Protección: Este tipo de Proxy controla el acceso al objeto real verificando los permisos y autorizaciones del cliente antes de permitir que acceda al objeto. Puede restringir ciertas operaciones o datos dependiendo de los roles y privilegios del cliente, lo que garantiza la seguridad y la integridad del sistema.
+
+Proxy Inteligente: Aquí, el Proxy proporciona funcionalidades adicionales al acceso del objeto, como la gestión de caché para mejorar el rendimiento, la auditoría de accesos para fines de registro y seguimiento, o la gestión de recursos para controlar la asignación y liberación de recursos asociados al objeto.
+
+
+
+
+Proxy Remoto:
+Supongamos que tienes un sistema cliente-servidor donde el cliente necesita acceder a ciertos recursos almacenados en el servidor. Utilizarías un Proxy Remoto para manejar las comunicaciones entre el cliente y el servidor de manera transparente. Por ejemplo, imagina un sistema de gestión de archivos donde el cliente solicita la descarga de un archivo desde el servidor. El Proxy Remoto sería responsable de establecer la conexión con el servidor, enviar la solicitud de descarga, recibir el archivo y transmitirlo de vuelta al cliente. El cliente no necesita preocuparse por los detalles de la comunicación remota, ya que todo está encapsulado dentro del Proxy Remoto.
+
+Proxy Virtual:
+Supongamos que estás desarrollando una aplicación de edición de imágenes que trabaja con imágenes de alta resolución. Cargar una imagen de alta resolución puede ser costoso en términos de memoria y tiempo de procesamiento. Aquí, podrías usar un Proxy Virtual para retrasar la carga completa de la imagen hasta que sea necesario. Por ejemplo, cuando el usuario abre un archivo de imagen, en lugar de cargar toda la imagen de una vez, el Proxy Virtual carga solo una versión en baja resolución o una sección pequeña de la imagen. Luego, a medida que el usuario se desplaza por la imagen o realiza operaciones de zoom, el Proxy Virtual carga y muestra las partes relevantes de la imagen a medida que son necesarias.
+
+Proxy de Protección:
+Imagina un sistema de gestión de documentos donde diferentes usuarios tienen diferentes niveles de acceso a los documentos según sus roles y privilegios. Aquí, podrías usar un Proxy de Protección para controlar el acceso a los documentos. Por ejemplo, si un usuario intenta acceder a un documento confidencial, el Proxy de Protección verificará si el usuario tiene los permisos adecuados antes de permitir el acceso. Si el usuario no tiene los permisos necesarios, el Proxy de Protección bloqueará el acceso y devolverá un mensaje de error apropiado.
+
+Proxy Inteligente:
+Supongamos que estás desarrollando un sistema de gestión de recursos multimedia que necesita administrar la reproducción de archivos de audio y video. Aquí, podrías usar un Proxy Inteligente para agregar funcionalidades adicionales, como la gestión de caché para almacenar en caché archivos multimedia previamente reproducidos para mejorar el rendimiento y reducir la carga en el servidor. Además, el Proxy Inteligente podría realizar el registro de accesos para realizar un seguimiento de qué archivos multimedia se han reproducido y cuándo, proporcionando así información útil para análisis y auditoría.
+
+
+
+
+
+Control de acceso: El Proxy puede controlar quién puede acceder al objeto real y en qué circunstancias. Por ejemplo, puede imponer restricciones de seguridad, como verificar permisos de usuario antes de permitir el acceso al objeto.
+
+Gestión de recursos: El Proxy puede administrar la creación, carga o destrucción del objeto real según sea necesario. Esto es útil cuando el objeto es costoso en términos de recursos, como memoria o tiempo de procesamiento.
+
+Implementación de funcionalidades adicionales: El Proxy puede agregar funcionalidades adicionales al objeto real sin modificar su interfaz. Por ejemplo, puede implementar la gestión de caché para mejorar el rendimiento, la auditoría de accesos para realizar un seguimiento de quién accede al objeto y cuándo, o la administración de conexiones para optimizar el uso de recursos de red.
+
+Mejora del rendimiento: El Proxy puede mejorar el rendimiento al evitar la creación o carga innecesaria del objeto real. Por ejemplo, en el caso de un Proxy Virtual, puede retrasar la carga de datos pesados hasta que sea realmente necesario, reduciendo así el tiempo de inicio de la aplicación y el consumo de recursos.

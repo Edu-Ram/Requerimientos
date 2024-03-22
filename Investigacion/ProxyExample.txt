@@ -1,0 +1,34 @@
+Caso de uso:
+El usuario puede acceder al programa y hacer un request para visualizar una imagen.
+
+RQNF: El sistema utiliza el patrón Proxy para controlar el acceso y la carga eficiente de imágenes grandes desde un servidor, permitiendo carga, desde el disco, de imagenes solo cuando sea necesario y optimizando el rendimiento del sistema.
+
+
+Code:
+ImageInterface (Interfaz ImageInterface):
+Esta interfaz define el contrato para las clases que representan imágenes.
+Contiene el método displayImage(), que se encarga de mostrar la imagen.
+
+Image (Clase Image):
+Esta clase representa una imagen y la implementa la interfaz ImageInterface.
+Tiene campos para almacenar el nombre del archivo de la imagen, el estado de carga (isLoaded), y los datos de la imagen en sí (imageData).
+El constructor toma el nombre del archivo de la imagen y carga los datos de la imagen desde el disco utilizando el método loadImageFromDisk().
+El método loadImageFromDisk() carga los datos de la imagen desde el disco utilizando la clase ImageIO.
+El método displayImage() muestra la imagen en una ventana utilizando JFrame y JLabel.
+
+ProxyImage (Clase ProxyImage):
+Esta clase actúa como un proxy para la clase Image, implementando la interfaz ImageInterface.
+Tiene campos para almacenar el nombre del archivo de la imagen (filename), una instancia de Image (image) y un indicador de si la imagen ha sido cargada (isLoaded).
+El constructor toma el nombre del archivo de la imagen pero no carga los datos de la imagen en ese momento.
+El método displayImage() verifica si la imagen ya ha sido cargada. Si no lo ha sido, crea una instancia de Image y carga la imagen utilizando el método displayImage() de esa instancia.
+
+Usuario (Clase Usuario):
+Esta clase representa a un usuario que desea ver una imagen.
+Tiene un campo para almacenar una instancia de ImageInterface.
+El constructor toma una instancia de ImageInterface como parámetro.
+El método verImagen() llama al método displayImage() de la instancia de ImageInterface para mostrar la imagen.
+
+ProxyExample (Clase ProxyExample):
+Esta es la clase principal que contiene el método main.
+En el método main, se crean instancias de ProxyImage para diferentes imágenes y se pasan a instancias de Usuario para ver las imágenes.
+Se muestra cómo el proxy controla la carga de la imagen, evitando la carga innecesaria si la imagen ya está cargada.
