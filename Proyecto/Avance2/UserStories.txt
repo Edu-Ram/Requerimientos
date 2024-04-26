@@ -1,0 +1,89 @@
+Registro de cliente (RF)
+Como mesero, quiero poder registrar a un nuevo cliente en el sistema si no está registrado previamente, para poder procesar su orden.
+Criterios de aceptación:
+-El mesero puede ingresar los datos del cliente en el sistema.
+-Se valida que el cliente no esté registrado previamente.
+-Se muestra una mensaje de confirmación indicando que se ha registrado con éxito.
+
+Toma de orden (FR)
+Como mesero, quiero poder registrar la orden del cliente en el sistema.
+Criterios de aceptación:
+-El mesero puede seleccionar los productos de la orden desde un menú en el sistema.
+-El sistema permite indicar los detalles de la orden(evento, identificador del cliente, asiento)
+-Se pueden agregar detalles adicionales sobre la orden (instrucciones especiales, modificaciones, etc.).
+-La orden queda registrada en el sistema y vinculada al cliente.
+
+Escalabilidad (RNF)
+Como mesero, quiero que la aplicación sea escalable para soportar un crecimiento futuro en el número de usuarios y transacciones, sin degradar el rendimiento.
+Criterios de aceptación:
+-La arquitectura del sistema debe permitir el escalado horizontal mediante la adición de más servidores o recursos computacionales según sea necesario.
+-La base de datos debe ser capaz de manejar al menos 10 millones de registros de órdenes y clientes sin degradar su rendimiento.
+-El sistema debe ser capaz de manejar un pico de al menos 1000 usuarios concurrentes y 2000 transacciones por minuto sin degradar su rendimiento.
+-Implementar monitoreo y alertas para detectar cuando se alcanza un umbral de carga y escalar automáticamente los recursos.
+
+Integración con pasarela de pagos (Datafono) (RNF)
+Como miembro del área de facturación, quiero que la aplicación se integre de manera segura con la pasarela de pagos y los datáfonos para procesar los pagos con tarjeta de manera confiable y cumplir con los estándares de seguridad.
+
+Criterios de aceptación:
+-La aplicación debe integrarse con la API de la pasarela de pagos utilizada en Costa Rica, utilizando protocolos seguros (HTTPS, TLS) y autenticación adecuada.
+-Implementar mecanismos para tokenizar los datos de tarjeta y no almacenarlos en la aplicación o la base de datos.
+-Cumplir con los estándares de seguridad PCI-DSS para el manejo de datos de tarjetas de crédito.
+-Realizar pruebas exhaustivas de integración y certificación con la pasarela de pagos y los datáfonos utilizados en Costa Rica antes del lanzamiento en producción.
+-La integración debe permitir recibir notificaciones de pago exitoso o fallido desde la pasarela de pagos y los datáfonos, y actualizarlas en el sistema.
+-Proporcionar instrucciones claras a los meseros sobre cómo utilizar los datáfonos y procesar los pagos con tarjeta a través de la aplicación.
+-Implementar mecanismos de conciliación y auditoría para los pagos realizados con tarjeta a través de la pasarela de pagos y los datáfonos.
+
+Procesamiento de pago (RF)
+Como mesero, quiero poder registrar el pago de la orden del cliente en la aplicación para que el pedido pueda ser procesado.
+Criterios de aceptación:
+-El mesero puede seleccionar el método de pago (efectivo, sinpemovil o tarjeta de crédito/débito) en la aplicación.
+-En caso de pago en efectivo, el mesero ingresa el monto recibido. 
+-En caso de pago con sinpemovil, el mesero ingresa los datos de la transacción (adjunta comprobante de transferencia).
+-Se genera un comprobante de pago para el cliente. 
+-El pago queda registrado en el sistema y vinculado a la orden.
+
+Generación de factura (RF)
+Como miembro del área de facturación, quiero que la factura para el cliente se genere automáticamente después de que el cliente haya realizado el pago.
+Criterios de aceptación:
+-Se genera una factura con los detalles de la orden y el pago realizado.
+-La factura se envía por correo electrónico al cliente.
+-La factura queda registrada en el sistema.
+
+Notificación al mesero  (RF)
+Como mesero, quiero recibir una notificación cuando la orden de un cliente está lista para ser entregada.
+Criterios de aceptación:
+-El mesero recibe una notificación en la aplicación cuando la orden está lista para ser entregada.
+-La notificación incluye detalles de la orden y el cliente.
+-Se puede marcar la orden como entregada en el sistema.
+
+Entrega de orden (RF)
+Como mesero, quiero poder indicar que una orden ha sido entregada.
+Criterios de aceptación:
+-El mesero puede marcar una orden como entregada en el sistema.
+-Se registra la fecha y hora de entrega de la orden.
+-Se puede agregar comentarios o notas sobre la entrega.
+
+Accesibilidad y usabilidad (RNF)
+Como mesero, quiero que la aplicación sea fácil de usar y accesible, para garantizar una experiencia amigable al realizar mis tareas.
+
+Criterios de aceptación:
+-La interfaz de usuario debe ser intuitiva y seguir las mejores prácticas de diseño de experiencia de usuario (UX).
+-La aplicación debe cumplir con los estándares de accesibilidad web (WCAG) para permitir el uso por meseros con discapacidades visuales, auditivas o motoras.
+-Los elementos de la interfaz deben tener etiquetas y descripciones claras para facilitar la navegación y el uso.
+-La aplicación debe ser fácil de aprender y utilizar, minimizando la necesidad de capacitación extensa para los meseros.
+
+Envío automático de factura por correo electrónico (RF)
+Como cliente, quiero recibir la factura de mi pedido en mi correo electrónico automáticamente después de que se haya generado, para tener un registro de la transacción y los detalles de mi compra.
+Criterios de aceptación:
+-Después de que se genera la factura en el sistema, se envía automáticamente un correo electrónico al cliente con la factura adjunta.
+-El correo electrónico incluye información relevante como el número de factura, detalles del pedido, total a pagar, método de pago, etc.
+-El correo electrónico se envía a la dirección de correo electrónico registrada del cliente en el sistema.
+-Si el envío del correo electrónico falla, se registra un error en el sistema y se notifica al personal correspondiente para intentar enviarla nuevamente.
+-Se mantiene un registro en el sistema de las facturas enviadas por correo electrónico y los intentos fallidos de envío.
+
+Disponibilidad y tolerancia a fallos (RNF)
+Como mesero, quiero que la aplicación esté disponible en todo momento y sea tolerante a fallos, para poder seguir atendiendo a los clientes sin interrupciones.
+Criterios de aceptación:
+-Implementar una arquitectura de alta disponibilidad con servidores redundantes y balanceo de carga.
+-El sistema debe poder recuperarse automáticamente de un fallo en menos de 2 minutos.
+-Implementar mecanismos de respaldo de datos cada hora en un servidor separado.

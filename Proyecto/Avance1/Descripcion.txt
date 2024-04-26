@@ -1,0 +1,30 @@
+Diagrama de Casos de Uso:
+Cliente: Pago de la orden
+Mesero: Registro de orden -> extends -> Registro de cliente en el sistema en caso de no estar registrado
+Mesero: Registro de orden -> include -> Pago de orden por parte del cliente
+Mesero: Entrega de orden
+Área de facturación: Generación de factura -> include -> Notificación de factura al cliente
+
+Diagrama de Actividad:
+Cliente: Inicio
+Cliente: Ordena un pedido
+Mesero: Toma la información del cliente
+Mesero: Toma la orden del cliente
+
+if(Cliente no está registrado){
+Mesero: Registra al cliente dentro del sistema
+}
+Mesero: Registra la orden en el sistema
+Cliente: Realiza el pago de la orden
+Área de facturación: Genera la factura
+Cliente: Recibe la factura por correo electrónico
+Mesero: Recibe la notificación de orden lista para ser entregada
+Mesero: Entrega la orden al cliente
+Cliente: Recibe la orden
+Cliente: Fin
+
+Diagrama de Fishbone de Funcionalidades:
+Toma de orden: Registro del cliente en el sistema(Registrar al cliente dentro del sistema), Registro de Orden(Registrar los detalles de la orden)
+Facturación: Calcular total de la orden, Generar factura
+Notificaciones: Notificación al Cliente (Enviar factura al cliente por correo electrónico), Notificación al Mesero (Enviar estado de orden lista para ser entregada)
+Pago de Orden: Procesar pago (Generar comprobante de pago)
